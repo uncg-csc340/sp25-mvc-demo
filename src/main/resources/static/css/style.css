@@ -1,0 +1,29 @@
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: #A1DD70;
+}
+
+
+.table-striped>tbody>tr:nth-child(odd)>td {
+    background-color: #A1DD7080;
+}
+
+.table-striped>tbody>tr:nth-child(even)>td {
+    background-color: #A1DD7040;
+}
+
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #A1DD70;
+    border-color: #00000000
+}
+
+.btn-primary:hover {
+    color: #FFFFFF;
+    background-color: #799351;
+    border-color: #00000000
+}
+
+body{
+    background-color: #F6EEC9;
+}
