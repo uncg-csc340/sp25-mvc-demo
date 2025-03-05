@@ -39,6 +39,8 @@
   - The Service class is [`@Autowired`](https://github.com/uncg-csc340/sp25-mvc-demo/blob/03e5c2c8f477329a66891a4649d9df9d12358f7f/src/main/java/com/csc340/mvc_demo/student/StudentController.java#L20). Do not use a constructor, this will not work.
 - Views
   - All views live in [`src/main/resources/templates`](https://github.com/uncg-csc340/sp25-mvc-demo/tree/03e5c2c8f477329a66891a4649d9df9d12358f7f/src/main/resources/templates).
+     - These are `.ftlh` files. They are FreeMarker templates. They work exactly like html to build pages, but they are used by the server to append data from the database.
+     - You should configure you IntelliJ to associate `.ftlh` files with `html`.
      - You can also create subfolders in the templates folder. For example if you wanted views for the student to be in one folder you can create a `students` subfolder and put all the student views in there. Then your Controller would have to `return "students/students-list";` 
   - [`student-list.ftlh`](https://github.com/uncg-csc340/sp25-mvc-demo/blob/03e5c2c8f477329a66891a4649d9df9d12358f7f/src/main/resources/templates/student-list.ftlh)
     - [`<#list studentList as student>`](https://github.com/uncg-csc340/sp25-mvc-demo/blob/03e5c2c8f477329a66891a4649d9df9d12358f7f/src/main/resources/templates/student-list.ftlh#L51C8-L51C39) => "Loop through Student list and make a table row for each Student"
