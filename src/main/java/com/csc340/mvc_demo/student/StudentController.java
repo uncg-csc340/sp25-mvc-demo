@@ -45,8 +45,11 @@ public class StudentController {
      * @return One Student object.
      */
     @GetMapping("/{studentId}")
-    public Object getOneStudent(@PathVariable int studentId) {
-        return new ResponseEntity<>(service.getStudentById(studentId), HttpStatus.OK);
+    public Object getOneStudent(@PathVariable int studentId, Model model) {
+       // return new ResponseEntity<>(service.getStudentById(studentId), HttpStatus.OK);
+         model.addAttribute("student", service.getStudentById(studentId));
+         model.addAttribute("title", "Student #: "+studentId);
+         return "student-details";
 
     }
 

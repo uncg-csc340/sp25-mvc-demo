@@ -15,13 +15,13 @@
 <body>
 
 <!-- Begin Nav Bar -->
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-    <a class="navbar-brand" href="/students/all">
+<nav class="navbar navbar-expand-lg  navbar-dark" style="background-color: #799351;">
+    <a class="navbar-brand" href="/students/all" style="margin: 10px;">
         <img src="/images/logo.jpg" alt="" width="80" height="60">
     </a>
     <ul class="nav justify-content-end">
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/students/all">Home</a>
+            <a class="nav-link active" aria-current="page" href="/students/all" >Home</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#">Second</a>
@@ -35,13 +35,13 @@
 
 <div class="container" style="margin-top: 15px;">
     <h1>${title}</h1>
-    <a href="/students/createForm" class="btn btn-outline-primary">Create New Student</a>
+    <a href="/students/createForm" class="btn btn-outline-primary" style="float:right;">Create New Student</a>
 
     <form action="/students/name">
         <input type="text" name="search" placeholder="Search By Name &#128270;">
     </form>
 
-    <!-- Goals Table -->
+    <!-- Students Table -->
     <table class="table table-striped rounded-3 overflow-hidden">
         <tr>
             <th>ID</th>
