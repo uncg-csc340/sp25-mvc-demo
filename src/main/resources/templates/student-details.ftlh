@@ -39,13 +39,13 @@
         <h5 class="card-header">${student.name}</h5>
 
         <div class="card-body">
-            <span style="float:right"> <a href="/students/update/${studentId}"
+            <span style="float:right"> <a href="/students/update/${studentId?c}"
                                           class="btn btn-primary">Edit Student</a></span>
-            <h5 class="card-title">ID: ${student.studentId}</h5>
+            <h5 class="card-title">ID: ${student.studentId?c}</h5>
             <p class="card-text">Name: ${student.name}</p>
             <p class="card-text">Major: ${student.major}</p>
             <p class="card-text">GPA: ${student.gpa}</p>
-            <a href="/students/delete/${studentId}" class="btn btn-danger">Delete
+            <a href="/students/delete/${studentId?c}" class="btn btn-danger">Delete
                 Student</a>
 
             <a href="/students/all" class="btn btn-primary">Go back</a>
