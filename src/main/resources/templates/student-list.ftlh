@@ -51,7 +51,7 @@
         <#list studentList as student>
         <tr>
             <td>
-                <a href="/students/${student.studentId}" style="color:#000000">${student.studentId}</a>
+                <a href="/students/${student.studentId?c}" style="color:#000000">${student.studentId?c}</a>
             </td>
             <td>${student.name}</td>
             <td>
