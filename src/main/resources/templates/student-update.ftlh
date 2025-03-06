@@ -40,14 +40,9 @@
         <input type="text" id="major" name="major"  value="${student.major}" placeholder="Major"/>
         <input type="number" id="gpa" name="gpa" step="0.01" value="${student.gpa}" placeholder="GPA"/>
         <button type="submit" class="btn btn-primary">Save</button>
-        <button type="reset" class="btn btn-danger" onclick="closeForm()">Cancel</button>
+       <a href="/students/${student.studentId?c}" class="btn btn-outline-danger" >Cancel</a>
     </form>
 
 </div>
-<script>
-    function closeForm() {
-      document.getElementById("new-student").style.display = "none";
-    }
-</script>
 </body>
 </html>
