@@ -34,8 +34,8 @@
 
 <div class="container" style="margin-top: 15px;">
     <h1>${title}</h1>
-    <form id="new-student" action="/students/update/${student.studentId}" method="post">
-        <input type="text" id="studentId" name="studentId" value="${student.studentId}" readonly/>
+    <form id="new-student" action="/students/update/${student.studentId?c}" method="post">
+        <input type="text" id="studentId" name="studentId" value="${student.studentId?c}" readonly/>
         <input type="text" id="name" name="name" value="${student.name}" placeholder="Name"/>
         <input type="text" id="major" name="major"  value="${student.major}" placeholder="Major"/>
         <input type="number" id="gpa" name="gpa" step="0.01" value="${student.gpa}" placeholder="GPA"/>
